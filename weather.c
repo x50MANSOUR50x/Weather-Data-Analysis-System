@@ -539,12 +539,12 @@ unsigned int is_empty(void)
 
  unsigned char number_length(int temp)
  {
+    unsigned char counter=0;
     if(temp < 0)
     {
         temp *= -1;
+        counter++;
     }
-
-    unsigned char counter=0;
     while(temp > 0)
     {
         temp /= 10;
